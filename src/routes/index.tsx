@@ -468,7 +468,7 @@ function UseCases() {
         <Reveal>
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Use cases</p>
           <h2 className="mb-16 max-w-2xl font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-            Built for the work that matters.
+            Built for trusted software delivery.
           </h2>
         </Reveal>
         <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-3">
