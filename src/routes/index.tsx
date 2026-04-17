@@ -503,10 +503,6 @@ function Contact() {
                 Tell us a little about your team and what you're trying to solve. We'll reply
                 within one business day.
               </p>
-              <div className="mt-10 space-y-2 text-sm">
-                <p className="text-muted-foreground">hello@zeroui.com</p>
-                <p className="text-muted-foreground">San Francisco · Remote</p>
-              </div>
             </div>
           </Reveal>
 
