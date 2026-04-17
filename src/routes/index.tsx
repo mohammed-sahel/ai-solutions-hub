@@ -443,22 +443,22 @@ function HowItWorks() {
 
 const USE_CASES = [
   {
-    icon: Building2,
-    tag: "Business",
-    title: "Operations that run themselves",
-    body: "Automate document processing, customer support triage, and reporting so teams focus on judgment, not busywork.",
+    icon: Sparkles,
+    tag: "AI-generated change",
+    title: "Govern AI before it ships",
+    body: "ZeroUI verifies AI-generated code, configs, and delivery actions before they move—ensuring every change earns trust before entering the pipeline.",
   },
   {
-    icon: GraduationCap,
-    tag: "Education",
-    title: "Personalized at every level",
-    body: "Adaptive tutoring, content generation, and assessment tools that scale individual attention to every learner.",
+    icon: Bot,
+    tag: "Autonomous agents",
+    title: "Control what agents can do",
+    body: "Define boundaries for autonomous coding agents. Every action is checked against policy before it becomes real—enabling safe, controlled automation.",
   },
   {
-    icon: HeartPulse,
-    tag: "Healthcare",
-    title: "More time with patients",
-    body: "Clinical documentation, intake, and decision support that reduce admin load while keeping clinicians in control.",
+    icon: ShieldCheck,
+    tag: "Release & compliance",
+    title: "Stop risk before production",
+    body: "ZeroUI enforces policy, verifies readiness, and blocks unsafe releases—while creating clear evidence for audit, compliance, and traceability.",
   },
 ];
 
