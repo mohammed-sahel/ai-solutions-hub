@@ -359,9 +359,9 @@ function Services() {
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr] lg:gap-24">
           <Reveal>
             <div>
-              <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Services</p>
+              <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Product</p>
               <h2 className="font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-                What we do
+                What it does
               </h2>
             </div>
           </Reveal>
