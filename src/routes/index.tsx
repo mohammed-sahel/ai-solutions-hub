@@ -321,19 +321,19 @@ function Marquee() {
 
 const SERVICES = [
   {
-    icon: Sparkles,
-    title: "AI Strategy",
-    body: "Identify the highest-leverage opportunities for AI in your organization, with a clear roadmap and measurable outcomes.",
+    icon: Shield,
+    title: "Prevent Unsafe Releases",
+    body: "ZeroUI stops risky human and AI-generated changes before they escape the IDE, CI, or release path—shifting control from reactive detection to proactive prevention.",
   },
   {
     icon: Workflow,
-    title: "Custom Solutions",
-    body: "Bespoke AI applications — assistants, agents, document pipelines — built around your workflows and data.",
+    title: "Enforce Governance, Natively",
+    body: "Apply consistent policies directly within developer workflows. ZeroUI brings control into the IDE, CI, and release systems—without slowing teams down.",
   },
   {
-    icon: Shield,
-    title: "Safe Deployment",
-    body: "Production-grade systems with evaluation, monitoring, and guardrails so AI works reliably at scale.",
+    icon: Sparkles,
+    title: "Prove Every Decision",
+    body: "Every change is verified and recorded with clear evidence—what was checked, blocked, or approved—creating full traceability, auditability, and trust.",
   },
 ];
 
