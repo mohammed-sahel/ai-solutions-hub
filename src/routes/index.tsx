@@ -160,12 +160,6 @@ function Hero() {
     e.currentTarget.style.setProperty("--my", `${e.clientY - rect.top}px`);
   };
 
-  const words = ["ship.", "deploy.", "merge.", "ship."];
-  const [wordIdx, setWordIdx] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setWordIdx((i) => (i + 1) % (words.length - 1)), 2400);
-    return () => clearInterval(t);
-  }, []);
 
   return (
     <section
@@ -192,21 +186,7 @@ function Hero() {
 
         <h1 className="font-display text-4xl leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-7xl">
           <span className="block">Stop risky changes</span>
-          <span className="gradient-text block italic">
-            before they{" "}
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={words[wordIdx]}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.4 }}
-                className="inline-block"
-              >
-                {words[wordIdx]}
-              </motion.span>
-            </AnimatePresence>
-          </span>
+          <span className="gradient-text block italic">before they ship.</span>
         </h1>
 
         <motion.p
