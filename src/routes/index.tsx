@@ -16,7 +16,20 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { ThemeToggle } from "@/components/theme-toggle";
-import zeroUiLogo from "@/assets/zeroui-logo.jpg";
+
+function ZeroUiWordmark({ className = "" }: { className?: string }) {
+  return (
+    <span
+      className={`font-display text-2xl leading-none tracking-tight ${className}`}
+      aria-label="ZeroUI"
+    >
+      <span style={{ color: "var(--accent)" }}>z</span>
+      <span style={{ color: "var(--primary)" }}>ero</span>
+      <span style={{ color: "var(--accent)" }}>u</span>
+      <span style={{ color: "var(--primary)" }}>i</span>
+    </span>
+  );
+}
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -41,8 +54,8 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-10">
-        <a href="#top" className="flex items-center gap-2.5 text-lg font-medium tracking-tight">
-          <img src={zeroUiLogo} alt="ZeroUI" className="h-8 w-auto object-contain" />
+        <a href="#top" className="flex items-center gap-2.5">
+          <ZeroUiWordmark />
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">
@@ -576,7 +589,7 @@ function Footer() {
     <footer className="border-t border-border/60">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-12 lg:flex-row lg:items-center lg:justify-between lg:px-10">
         <div className="flex items-center gap-3 text-sm">
-          <img src={zeroUiLogo} alt="ZeroUI" className="h-7 w-auto object-contain" />
+          <ZeroUiWordmark className="!text-xl" />
           <span className="text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground">
