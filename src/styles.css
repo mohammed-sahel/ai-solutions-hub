@@ -35,49 +35,51 @@
 
 :root {
   --radius: 0.5rem;
-  /* Warm off-white inspired by Anthropic */
-  --background: oklch(0.975 0.012 75);
-  --foreground: oklch(0.18 0.015 60);
-  --card: oklch(0.985 0.008 75);
-  --card-foreground: oklch(0.18 0.015 60);
-  --popover: oklch(0.985 0.008 75);
-  --popover-foreground: oklch(0.18 0.015 60);
-  /* Warm terracotta accent */
-  --primary: oklch(0.55 0.13 40);
-  --primary-foreground: oklch(0.985 0.008 75);
-  --secondary: oklch(0.94 0.015 75);
-  --secondary-foreground: oklch(0.22 0.015 60);
-  --muted: oklch(0.93 0.012 75);
-  --muted-foreground: oklch(0.48 0.018 60);
-  --accent: oklch(0.92 0.025 60);
-  --accent-foreground: oklch(0.22 0.015 60);
+  /* Cool off-white tuned to ZeroUI logo */
+  --background: oklch(0.975 0.006 230);
+  --foreground: oklch(0.2 0.04 250);
+  --card: oklch(0.985 0.005 230);
+  --card-foreground: oklch(0.2 0.04 250);
+  --popover: oklch(0.985 0.005 230);
+  --popover-foreground: oklch(0.2 0.04 250);
+  /* Deep navy primary from logo */
+  --primary: oklch(0.28 0.06 250);
+  --primary-foreground: oklch(0.98 0.005 230);
+  --secondary: oklch(0.94 0.012 230);
+  --secondary-foreground: oklch(0.22 0.04 250);
+  --muted: oklch(0.93 0.01 230);
+  --muted-foreground: oklch(0.48 0.025 245);
+  /* Cyan/sky accent from logo highlights */
+  --accent: oklch(0.78 0.13 230);
+  --accent-foreground: oklch(0.2 0.04 250);
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.985 0.003 247);
-  --border: oklch(0.88 0.012 75);
-  --input: oklch(0.88 0.012 75);
-  --ring: oklch(0.55 0.13 40);
+  --border: oklch(0.88 0.012 230);
+  --input: oklch(0.88 0.012 230);
+  --ring: oklch(0.55 0.15 230);
 }
 
 .dark {
-  --background: oklch(0.16 0.012 60);
-  --foreground: oklch(0.96 0.008 75);
-  --card: oklch(0.2 0.012 60);
-  --card-foreground: oklch(0.96 0.008 75);
-  --popover: oklch(0.2 0.012 60);
-  --popover-foreground: oklch(0.96 0.008 75);
-  --primary: oklch(0.7 0.13 40);
-  --primary-foreground: oklch(0.16 0.012 60);
-  --secondary: oklch(0.26 0.012 60);
-  --secondary-foreground: oklch(0.96 0.008 75);
-  --muted: oklch(0.26 0.012 60);
-  --muted-foreground: oklch(0.7 0.012 60);
-  --accent: oklch(0.26 0.025 60);
-  --accent-foreground: oklch(0.96 0.008 75);
+  --background: oklch(0.18 0.04 250);
+  --foreground: oklch(0.96 0.008 230);
+  --card: oklch(0.22 0.04 250);
+  --card-foreground: oklch(0.96 0.008 230);
+  --popover: oklch(0.22 0.04 250);
+  --popover-foreground: oklch(0.96 0.008 230);
+  /* In dark mode, lift primary toward the bright cyan accent */
+  --primary: oklch(0.78 0.13 230);
+  --primary-foreground: oklch(0.18 0.04 250);
+  --secondary: oklch(0.28 0.04 250);
+  --secondary-foreground: oklch(0.96 0.008 230);
+  --muted: oklch(0.28 0.04 250);
+  --muted-foreground: oklch(0.72 0.02 230);
+  --accent: oklch(0.7 0.14 230);
+  --accent-foreground: oklch(0.18 0.04 250);
   --destructive: oklch(0.7 0.19 22);
-  --destructive-foreground: oklch(0.96 0.008 75);
+  --destructive-foreground: oklch(0.96 0.008 230);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.7 0.13 40);
+  --ring: oklch(0.78 0.13 230);
 }
 
 @layer base {
@@ -113,15 +115,15 @@
 }
 
 @layer utilities {
-  /* Animated gradient text */
+  /* Animated gradient text — navy to cyan */
   .gradient-text {
     background: linear-gradient(
       110deg,
       var(--primary) 0%,
-      oklch(0.62 0.16 30) 30%,
-      oklch(0.45 0.1 50) 55%,
+      oklch(0.5 0.12 235) 30%,
+      oklch(0.72 0.14 225) 55%,
       var(--primary) 80%,
-      oklch(0.62 0.16 30) 100%
+      oklch(0.5 0.12 235) 100%
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;
@@ -155,7 +157,7 @@
   .aurora::before {
     width: 520px;
     height: 520px;
-    background: radial-gradient(circle, oklch(0.78 0.14 40) 0%, transparent 70%);
+    background: radial-gradient(circle, oklch(0.78 0.14 230) 0%, transparent 70%);
     top: -120px;
     right: -80px;
     animation: float-a 14s ease-in-out infinite;
@@ -163,7 +165,7 @@
   .aurora::after {
     width: 460px;
     height: 460px;
-    background: radial-gradient(circle, oklch(0.82 0.09 80) 0%, transparent 70%);
+    background: radial-gradient(circle, oklch(0.55 0.1 250) 0%, transparent 70%);
     bottom: -160px;
     left: -100px;
     animation: float-b 18s ease-in-out infinite;
