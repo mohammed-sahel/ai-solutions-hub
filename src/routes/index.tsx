@@ -16,18 +16,15 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { ThemeToggle } from "@/components/theme-toggle";
+import zeroUiLogo from "@/assets/zeroui-logo.png";
 
 function ZeroUiWordmark({ className = "" }: { className?: string }) {
   return (
-    <span
-      className={`font-display text-2xl leading-none tracking-tight ${className}`}
-      aria-label="ZeroUI"
-    >
-      <span style={{ color: "var(--accent)" }}>z</span>
-      <span style={{ color: "var(--primary)" }}>ero</span>
-      <span style={{ color: "var(--accent)" }}>u</span>
-      <span style={{ color: "var(--primary)" }}>i</span>
-    </span>
+    <img
+      src={zeroUiLogo}
+      alt="ZeroUI"
+      className={`h-7 w-auto object-contain dark:brightness-0 dark:invert-0 ${className}`}
+    />
   );
 }
 
