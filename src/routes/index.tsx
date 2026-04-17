@@ -396,9 +396,9 @@ function Services() {
 }
 
 const STEPS = [
-  { n: "01", title: "Discover", body: "We map your workflows, data, and goals to find where AI delivers real value." },
-  { n: "02", title: "Build", body: "We design and ship a focused solution, integrated with your existing systems." },
-  { n: "03", title: "Scale", body: "We measure, refine, and expand — turning early wins into lasting capability." },
+  { n: "01", title: "Observe", body: "Every code, config, and AI-generated change is captured at the source—before it moves through the delivery pipeline." },
+  { n: "02", title: "Verify", body: "Each change is evaluated against policy, safety rules, and delivery requirements—establishing trust before progress." },
+  { n: "03", title: "Enforce", body: "Unsafe changes are blocked before they reach production, while safe changes move forward with full traceability." },
 ];
 
 function HowItWorks() {
@@ -408,7 +408,7 @@ function HowItWorks() {
         <Reveal>
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">How it works</p>
           <h2 className="mb-16 max-w-2xl font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-            Three simple steps from idea to impact.
+            Three steps to control every change.
           </h2>
         </Reveal>
         <div className="relative grid gap-12 md:grid-cols-3 md:gap-10">
