@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
 });
 
 const NAV = [
-  { label: "Services", href: "#services" },
+  { label: "Product", href: "#services" },
   { label: "How it works", href: "#how" },
   { label: "Use cases", href: "#use-cases" },
   { label: "Contact", href: "#contact" },
@@ -297,7 +297,7 @@ function MagneticButton({ children, onClick }: { children: React.ReactNode; onCl
   );
 }
 
-const LOGOS = ["NORTHWAVE", "ATLAS&CO", "LUMEN", "FIELDNOTE", "PARALLAX", "MERIDIAN", "OUTPOST"];
+const LOGOS = ["Policy", "Verification", "Control", "Traceability", "Enforcement", "Prevention", "Governance", "Trust"];
 
 function Marquee() {
   return (
