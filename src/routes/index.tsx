@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { ThemeToggle } from "@/components/theme-toggle";
+import zeroUiLogo from "@/assets/zeroui-logo.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -41,8 +42,7 @@ function Nav() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-10">
         <a href="#top" className="flex items-center gap-2.5 text-lg font-medium tracking-tight">
-          <span className="pulse-dot inline-block h-2.5 w-2.5 rounded-full bg-primary" />
-          <span className="font-display">ZeroUI</span>
+          <img src={zeroUiLogo} alt="ZeroUI" className="h-8 w-auto object-contain" />
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">
@@ -575,10 +575,9 @@ function Footer() {
   return (
     <footer className="border-t border-border/60">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-12 lg:flex-row lg:items-center lg:justify-between lg:px-10">
-        <div className="flex items-center gap-2 text-sm">
-          <span className="pulse-dot inline-block h-2 w-2 rounded-full bg-primary" />
-          <span className="font-display text-base">ZeroUI</span>
-          <span className="ml-3 text-muted-foreground">© {new Date().getFullYear()}</span>
+        <div className="flex items-center gap-3 text-sm">
+          <img src={zeroUiLogo} alt="ZeroUI" className="h-7 w-auto object-contain" />
+          <span className="text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground">
           <a href="#services" className="link-underline hover:text-foreground">Services</a>
