@@ -30,9 +30,9 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Northwind — AI solutions for modern businesses" },
-      { name: "description", content: "Northwind builds practical AI solutions that help modern businesses work smarter — from automation to insight." },
-      { property: "og:title", content: "Northwind — AI solutions for modern businesses" },
+      { title: "ZeroUI — AI solutions for modern businesses" },
+      { name: "description", content: "ZeroUI builds practical AI solutions that help modern businesses work smarter — from automation to insight." },
+      { property: "og:title", content: "ZeroUI — AI solutions for modern businesses" },
       { property: "og:description", content: "Practical AI solutions for modern businesses." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

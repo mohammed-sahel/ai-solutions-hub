@@ -31,7 +31,7 @@ function Nav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-10">
         <a href="#top" className="flex items-center gap-2 text-lg font-medium tracking-tight">
           <span className="inline-block h-2.5 w-2.5 rounded-full bg-primary" />
-          <span className="font-display">Northwind</span>
+          <span className="font-display">ZeroUI</span>
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">
@@ -255,7 +255,7 @@ function Contact() {
               Tell us a little about your team and what you're trying to solve. We'll reply within one business day.
             </p>
             <div className="mt-10 space-y-2 text-sm">
-              <p className="text-muted-foreground">hello@northwind.ai</p>
+              <p className="text-muted-foreground">hello@zeroui.com</p>
               <p className="text-muted-foreground">San Francisco · Remote</p>
             </div>
           </div>
@@ -296,7 +296,7 @@ function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-12 lg:flex-row lg:items-center lg:justify-between lg:px-10">
         <div className="flex items-center gap-2 text-sm">
           <span className="inline-block h-2 w-2 rounded-full bg-primary" />
-          <span className="font-display text-base">Northwind</span>
+          <span className="font-display text-base">ZeroUI</span>
           <span className="ml-3 text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground">
