@@ -60,7 +60,7 @@ function Nav() {
             <button
               key={item.href}
               onClick={() => handleClick(item.href)}
-              className="link-underline text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="link-underline text-sm text-primary/80 transition-colors hover:text-accent"
             >
               {item.label}
             </button>
@@ -184,45 +184,28 @@ function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-8 flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-muted-foreground"
+          className="mb-8 flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-accent"
         >
-          <span className="inline-block h-px w-8 bg-muted-foreground/50" />
+          <span className="inline-block h-px w-8 bg-accent/60" />
           Developer-first AI governance
         </motion.p>
 
-        <h1 className="font-display text-5xl leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl xl:text-8xl">
-          <span className="reveal-line">
-            <motion.span
-              initial={{ y: "110%" }}
-              animate={{ y: "0%" }}
-              transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-              className="block"
-            >
-              Stop risky changes
-            </motion.span>
-          </span>
-          <br />
-          <span className="reveal-line italic">
-            <motion.span
-              initial={{ y: "110%" }}
-              animate={{ y: "0%" }}
-              transition={{ duration: 0.8, delay: 0.15, ease: [0.4, 0, 0.2, 1] }}
-              className="gradient-text block"
-            >
-              before they{" "}
-              <AnimatePresence mode="wait">
-                <motion.span
-                  key={words[wordIdx]}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.4 }}
-                  className="inline-block"
-                >
-                  {words[wordIdx]}
-                </motion.span>
-              </AnimatePresence>
-            </motion.span>
+        <h1 className="font-display text-4xl leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-7xl">
+          <span className="block">Stop risky changes</span>
+          <span className="gradient-text block italic">
+            before they{" "}
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={words[wordIdx]}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.4 }}
+                className="inline-block"
+              >
+                {words[wordIdx]}
+              </motion.span>
+            </AnimatePresence>
           </span>
         </h1>
 
