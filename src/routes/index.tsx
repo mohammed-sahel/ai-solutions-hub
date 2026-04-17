@@ -8,7 +8,6 @@ import {
   Workflow,
   Shield,
   Bot,
-  Cpu,
   ShieldCheck,
 } from "lucide-react";
 import { motion, useScroll, useTransform, useInView, useReducedMotion, AnimatePresence } from "framer-motion";
