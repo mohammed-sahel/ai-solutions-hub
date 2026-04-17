@@ -7,9 +7,9 @@ import {
   Sparkles,
   Workflow,
   Shield,
-  Building2,
-  GraduationCap,
-  HeartPulse,
+  Bot,
+  Cpu,
+  ShieldCheck,
 } from "lucide-react";
 import { motion, useScroll, useTransform, useInView, useReducedMotion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
