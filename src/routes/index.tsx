@@ -297,7 +297,7 @@ function MagneticButton({ children, onClick }: { children: React.ReactNode; onCl
   );
 }
 
-const LOGOS = ["NORTHWAVE", "ATLAS&CO", "LUMEN", "FIELDNOTE", "PARALLAX", "MERIDIAN", "OUTPOST"];
+const LOGOS = ["Policy", "Verification", "Control", "Traceability", "Enforcement", "Prevention", "Governance", "Trust"];
 
 function Marquee() {
   return (
