@@ -151,7 +151,7 @@ function Hero() {
     e.currentTarget.style.setProperty("--my", `${e.clientY - rect.top}px`);
   };
 
-  const words = ["modern", "ambitious", "everyday", "modern"];
+  const words = ["ship.", "deploy.", "merge.", "ship."];
   const [wordIdx, setWordIdx] = useState(0);
   useEffect(() => {
     const t = setInterval(() => setWordIdx((i) => (i + 1) % (words.length - 1)), 2400);
@@ -178,7 +178,7 @@ function Hero() {
           className="mb-8 flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-muted-foreground"
         >
           <span className="inline-block h-px w-8 bg-muted-foreground/50" />
-          Applied AI, built for business
+          Developer-first AI governance
         </motion.p>
 
         <h1 className="font-display text-5xl leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl xl:text-8xl">
@@ -189,7 +189,7 @@ function Hero() {
               transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
               className="block"
             >
-              AI solutions for
+              Stop risky changes
             </motion.span>
           </span>
           <br />
@@ -200,6 +200,7 @@ function Hero() {
               transition={{ duration: 0.8, delay: 0.15, ease: [0.4, 0, 0.2, 1] }}
               className="gradient-text block"
             >
+              before they{" "}
               <AnimatePresence mode="wait">
                 <motion.span
                   key={words[wordIdx]}
@@ -211,8 +212,7 @@ function Hero() {
                 >
                   {words[wordIdx]}
                 </motion.span>
-              </AnimatePresence>{" "}
-              businesses
+              </AnimatePresence>
             </motion.span>
           </span>
         </h1>
@@ -223,9 +223,9 @@ function Hero() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl"
         >
-          We help teams move faster with practical AI — from automating routine work to
-          surfacing insights buried in your data. Thoughtful, measurable, deployed in weeks
-          not quarters.
+          ZeroUI is a developer-native governance layer that prevents unsafe human and
+          AI-generated changes from escaping your IDE, CI, or release pipeline. Built for
+          speed, without compromising control.
         </motion.p>
 
         <motion.div
@@ -236,7 +236,7 @@ function Hero() {
         >
           <MagneticButton onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}>
             <Button size="lg" className="group rounded-full px-7">
-              Start a project
+              Get started
               <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </MagneticButton>
@@ -246,7 +246,7 @@ function Hero() {
             className="rounded-full px-7"
             onClick={() => document.querySelector("#services")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Explore services
+            Explore product
           </Button>
         </motion.div>
 
