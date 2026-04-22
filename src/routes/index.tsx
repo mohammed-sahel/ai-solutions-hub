@@ -281,18 +281,18 @@ function Marquee() {
 const SERVICES = [
   {
     icon: Shield,
-    title: "Prevent Unsafe Releases",
-    body: "ZeroUI stops risky human and AI-generated changes before they escape the IDE, CI, or release path—shifting control from reactive detection to proactive prevention.",
+    title: "Observe & Verify Changes",
+    body: "Every code, config, and AI-generated change is captured and verified before it moves forward—ensuring it meets safety, policy, and delivery requirements.",
   },
   {
     icon: Workflow,
-    title: "Enforce Governance, Natively",
-    body: "Apply consistent policies directly within developer workflows. ZeroUI brings control into the IDE, CI, and release systems—without slowing teams down.",
+    title: "Enforce Governance in Workflow",
+    body: "Policies are enforced directly inside your existing workflows—IDE, CI, and release—so your team can move fast without losing control.",
   },
   {
     icon: Sparkles,
-    title: "Prove Every Decision",
-    body: "Every change is verified and recorded with clear evidence—what was checked, blocked, or approved—creating full traceability, auditability, and trust.",
+    title: "Stop Unsafe Releases",
+    body: "Only verified changes reach production—everything else is stopped before it becomes an incident.",
   },
 ];
 
