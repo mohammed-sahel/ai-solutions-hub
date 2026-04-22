@@ -23,7 +23,7 @@ function ZeroUiWordmark({ className = "" }: { className?: string }) {
     <img
       src={zeroUiLogo}
       alt="ZeroUI"
-      className={`h-7 w-auto object-contain dark:brightness-0 dark:invert-0 ${className}`}
+      className={`h-7 w-auto object-contain dark:brightness-200 dark:contrast-200 ${className}`}
     />
   );
 }
