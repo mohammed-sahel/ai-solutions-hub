@@ -185,8 +185,8 @@ function Hero() {
         </motion.p>
 
         <h1 className="font-display text-4xl leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-7xl">
-          <span className="block">Stop risky changes</span>
-          <span className="gradient-text block italic">before they ship.</span>
+          <span className="block">Stop unsafe software changes</span>
+          <span className="gradient-text block italic">before they reach production.</span>
         </h1>
 
         <motion.p
@@ -195,9 +195,9 @@ function Hero() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl"
         >
-          ZeroUI is a developer-native governance layer that prevents unsafe human and
-          AI-generated changes from escaping your IDE, CI, or release pipeline. Built for
-          speed, without compromising control.
+          ZeroUI gives your team control over every software change—verifying and blocking
+          risky human and AI-generated changes directly within your IDE, CI, and release
+          pipeline. Ship faster with AI—without introducing risk, instability, or compliance gaps.
         </motion.p>
 
         <motion.div
