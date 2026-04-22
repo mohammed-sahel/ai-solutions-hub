@@ -281,18 +281,18 @@ function Marquee() {
 const SERVICES = [
   {
     icon: Shield,
-    title: "Observe & Verify Changes",
-    body: "Every code, config, and AI-generated change is captured and verified before it moves forward—ensuring it meets safety, policy, and delivery requirements.",
+    title: "ZeroUI Platform",
+    body: "ZeroUI is a governance layer for engineering teams that verifies and blocks risky human and AI-generated software changes across the IDE, CI, and release pipeline—ensuring only trusted changes reach production.",
   },
   {
     icon: Workflow,
-    title: "Enforce Governance in Workflow",
-    body: "Policies are enforced directly inside your existing workflows—IDE, CI, and release—so your team can move fast without losing control.",
+    title: "AI-Native Development Capability",
+    body: "Build the skills, systems, and ways of working needed to make AI a real part of day-to-day product development.\n\nWe help teams move from experimentation to practical adoption across engineering, product, and delivery workflows—without introducing risk.",
   },
   {
     icon: Sparkles,
-    title: "Stop Unsafe Releases",
-    body: "Only verified changes reach production—everything else is stopped before it becomes an incident.",
+    title: "Agent-Led Enterprise Capability",
+    body: "Design the capabilities, governance, and operating rhythms needed to make agent-led work practical across the enterprise.\n\nWe help organizations move from isolated AI pilots to scalable systems where agents support teams, streamline decisions, and improve execution—under control.",
   },
 ];
 
@@ -320,7 +320,7 @@ function Services() {
             <div>
               <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Product</p>
               <h2 className="font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-                What it does
+                What we do
               </h2>
             </div>
           </Reveal>
@@ -342,7 +342,7 @@ function Services() {
                   <h3 className="font-display text-2xl transition-colors group-hover:text-primary">
                     {s.title}
                   </h3>
-                  <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">{s.body}</p>
+                  <p className="mt-3 max-w-xl whitespace-pre-line leading-relaxed text-muted-foreground">{s.body}</p>
                   <span className="absolute left-0 top-0 h-px w-0 bg-primary transition-all duration-500 group-hover:w-16" />
                 </motion.div>
               </Reveal>
