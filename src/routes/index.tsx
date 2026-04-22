@@ -438,7 +438,7 @@ function Contact() {
             <div>
               <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Contact</p>
               <h2 className="font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-                See how ZeroUI fits into your workflow
+                See how ZeroUI and our AI capabilities fit into your workflow
               </h2>
               <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
                 Tell us about your team and your current delivery process. We'll show you how ZeroUI helps prevent unsafe changes before they reach production.
