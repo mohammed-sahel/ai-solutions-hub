@@ -34,7 +34,6 @@ export const Route = createFileRoute("/")({
 
 const NAV = [
   { label: "Product", href: "#services" },
-  { label: "How it works", href: "#how" },
   { label: "Use cases", href: "#use-cases" },
   { label: "Contact", href: "#contact" },
 ];
@@ -354,51 +353,6 @@ function Services() {
   );
 }
 
-const STEPS = [
-  { n: "01", title: "Observe", body: "Every code, config, and AI-generated change is captured at the source—before it moves through the delivery pipeline." },
-  { n: "02", title: "Verify", body: "Each change is evaluated against policy, safety rules, and delivery requirements—establishing trust before progress." },
-  { n: "03", title: "Enforce", body: "Unsafe changes are blocked before they reach production, while safe changes move forward with full traceability." },
-];
-
-function HowItWorks() {
-  return (
-    <section id="how" className="relative border-t border-border/60 bg-accent/40">
-      <div className="mx-auto max-w-6xl px-6 py-24 lg:px-10 lg:py-32">
-        <Reveal>
-          <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">How it works</p>
-          <h2 className="mb-16 max-w-2xl font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-            Three steps to control every change
-          </h2>
-        </Reveal>
-        <div className="relative grid gap-12 md:grid-cols-3 md:gap-10">
-          {/* Connecting line */}
-          <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
-            className="absolute left-0 right-0 top-8 hidden h-px origin-left bg-gradient-to-r from-primary/60 via-primary/30 to-transparent md:block"
-          />
-          {STEPS.map((step, i) => (
-            <Reveal key={step.n} delay={i * 0.15}>
-              <div className="group relative">
-                <motion.div
-                  whileHover={{ scale: 1.05, rotate: -2 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="font-display text-5xl text-primary lg:text-6xl"
-                >
-                  {step.n}
-                </motion.div>
-                <h3 className="mt-6 font-display text-2xl">{step.title}</h3>
-                <p className="mt-3 leading-relaxed text-muted-foreground">{step.body}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 const USE_CASES = [
   {
@@ -536,7 +490,7 @@ function Footer() {
         </div>
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground">
           <a href="#services" className="link-underline hover:text-foreground">Product</a>
-          <a href="#how" className="link-underline hover:text-foreground">How it works</a>
+          
           <a href="#use-cases" className="link-underline hover:text-foreground">Use cases</a>
           <a href="#contact" className="link-underline hover:text-foreground">Contact</a>
         </nav>
@@ -563,7 +517,7 @@ function Index() {
       <main>
         <Hero />
         <Services />
-        <HowItWorks />
+        
         <UseCases />
         <Contact />
       </main>
