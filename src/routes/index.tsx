@@ -342,7 +342,7 @@ function Services() {
                   <h3 className="font-display text-2xl transition-colors group-hover:text-primary">
                     {s.title}
                   </h3>
-                  <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">{s.body}</p>
+                  <p className="mt-3 max-w-xl whitespace-pre-line leading-relaxed text-muted-foreground">{s.body}</p>
                   <span className="absolute left-0 top-0 h-px w-0 bg-primary transition-all duration-500 group-hover:w-16" />
                 </motion.div>
               </Reveal>
