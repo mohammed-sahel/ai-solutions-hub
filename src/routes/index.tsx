@@ -367,7 +367,7 @@ function HowItWorks() {
         <Reveal>
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">How it works</p>
           <h2 className="mb-16 max-w-2xl font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-            Three steps to control every change.
+            Three steps to control every change
           </h2>
         </Reveal>
         <div className="relative grid gap-12 md:grid-cols-3 md:gap-10">
@@ -484,7 +484,7 @@ function Contact() {
             <div>
               <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Contact</p>
               <h2 className="font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-                See how ZeroUI fits into your workflow.
+                See how ZeroUI fits into your workflow
               </h2>
               <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
                 Tell us about your team and your current delivery process. We'll show you how ZeroUI helps prevent unsafe changes before they reach production.
