@@ -404,19 +404,19 @@ const USE_CASES = [
   {
     icon: Sparkles,
     tag: "AI-generated change",
-    title: "Govern AI before it ships",
+    title: "Prevent unsafe AI-generated code from silently reaching production",
     body: "ZeroUI verifies AI-generated code, configs, and delivery actions before they move—ensuring every change earns trust before entering the pipeline.",
   },
   {
     icon: Bot,
     tag: "Autonomous agents",
-    title: "Control what agents can do",
+    title: "Safely control autonomous agent actions",
     body: "Define boundaries for autonomous coding agents. Every action is checked against policy before it becomes real—enabling safe, controlled automation.",
   },
   {
     icon: ShieldCheck,
     tag: "Release & compliance",
-    title: "Stop risk before production",
+    title: "Prevent risky releases and enforce compliance before production",
     body: "ZeroUI enforces policy, verifies readiness, and blocks unsafe releases—while creating clear evidence for audit, compliance, and traceability.",
   },
 ];
@@ -428,7 +428,7 @@ function UseCases() {
         <Reveal>
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Use cases</p>
           <h2 className="mb-16 max-w-2xl font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-            Built for trusted software delivery.
+            Where ZeroUI applies control
           </h2>
         </Reveal>
         <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-3">
@@ -484,11 +484,10 @@ function Contact() {
             <div>
               <p className="mb-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">Contact</p>
               <h2 className="font-display text-4xl leading-tight tracking-tight lg:text-5xl">
-                Let's build something useful.
+                See how ZeroUI fits into your workflow.
               </h2>
               <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
-                Tell us a little about your team and what you're trying to solve. We'll reply
-                within one business day.
+                Tell us about your team and your current delivery process. We'll show you how ZeroUI helps prevent unsafe changes before they reach production.
               </p>
             </div>
           </Reveal>
@@ -536,7 +535,7 @@ function Footer() {
           <span className="text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground">
-          <a href="#services" className="link-underline hover:text-foreground">Services</a>
+          <a href="#services" className="link-underline hover:text-foreground">Product</a>
           <a href="#how" className="link-underline hover:text-foreground">How it works</a>
           <a href="#use-cases" className="link-underline hover:text-foreground">Use cases</a>
           <a href="#contact" className="link-underline hover:text-foreground">Contact</a>
